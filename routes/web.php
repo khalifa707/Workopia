@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/jobs', function () {
     return ('available jobs');
 });
+
+Route::post('/submit', function () {
+    return ('submitted');
+});
