@@ -13,3 +13,12 @@ Route::get('/jobs', function () {
 Route::post('/submit', function () {
     return ('submitted');
 });
+
+Route::any('/submit', function () {
+    return ('submitted');
+});
+
+Route::get('/test', function () {
+    $url = route('jobs');
+    return "<a href='{$url}'>Click here</a>";
+});
