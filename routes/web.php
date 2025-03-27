@@ -28,7 +28,7 @@ Route::any('/submit', function () {
     return ('post id: ' . $id);
 })->where('id', '[0-9]+');*/
 
-Route::get('/test', function (Request $request) {
+/*Route::get('/test', function (Request $request) {
     return [
         'method' => $request->method(),
         'url' => $request->url(),
@@ -42,4 +42,12 @@ Route::get('/test', function (Request $request) {
 
 Route::get('/users', function (Request $request) {
     return $request->all();
+});*/
+
+Route::get('test', function () {
+    return response('Hello World', 200);
+});
+
+Route::get('/not-found', function () {
+    return response('Not found', 404);
 });
