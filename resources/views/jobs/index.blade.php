@@ -8,7 +8,7 @@
     <title>Available Jobs</title>
 </head>
 <body>
-<h1><?php echo 'Available Jobs'?></h1>
+<h1><?php echo $title?></h1>
 <ul>
     <li><?php echo 'Web Designer'?></li>
     <li><?php echo 'Web Developer'?></li>
