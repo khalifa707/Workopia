@@ -8,8 +8,12 @@ Route::get('/', function () {
 });
 
 Route::get('/jobs', function () {
-    return ('available jobs');
+    return view('jobs.index');
 })->name('jobs');
+
+Route::get('/jobs/create', function () {
+    return view('jobs.create');
+})->name('jobs..create');
 
 /*Route::post('/submit', function () {
     return ('submitted');
@@ -44,10 +48,10 @@ Route::get('/users', function (Request $request) {
     return $request->all();
 });*/
 
-Route::get('test', function () {
+/*Route::get('test', function () {
     return response('Hello World', 200);
 });
 
 Route::get('/not-found', function () {
     return response('Not found', 404);
-});
+});*/
