@@ -8,11 +8,15 @@
     <title>Available Jobs</title>
 </head>
 <body>
-<h1><?php echo $title?></h1>
-<ul>
-    <li><?php echo 'Web Designer'?></li>
-    <li><?php echo 'Web Developer'?></li>
-    <li><?php echo 'Software Engineer'?></li>
-</ul>
+<h1>{{$title}}</h1>
+@if(!empty($jobs))
+    <ul>
+        @foreach($jobs as $job)
+            <li>{{ $job }}</li>
+        @endforeach
+    </ul>
+@else
+    <p>No jobs available</p>
+@endif
 </body>
 </html>
