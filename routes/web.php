@@ -10,6 +10,8 @@ Route::get('/jobs', [JobController::class, 'index']);
 
 Route::get('/jobs/create',[JobController::class, 'create']);
 
+Route::get('/jobs/{id}',[JobController::class, 'show']);
+
 /*Route::post('/submit', function () {
     return ('submitted');
 });
