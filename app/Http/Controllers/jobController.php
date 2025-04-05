@@ -17,4 +17,8 @@ class jobController extends Controller
         ];
         return view('jobs.index', compact('title', 'jobs'));
     }
+
+    public function create(){
+        return view('jobs.create');
+    }
 }
