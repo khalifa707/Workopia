@@ -8,9 +8,9 @@
     <title>@yield('title', 'Workopia | Find and List Jobs')</title>
 </head>
 <body class="bg-gray-100">
-    <h1>Welcome To Workopia</h1>
-    <main class="container mx-auto p-4 mt-4">
+    @include('partials.navbar')
+        <main class="container mx-auto p-4 mt-4">
         @yield('content')
-    </main>
+        </main>
 </body>
 </html>
