@@ -36,7 +36,7 @@ class JobController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return 'store';
     }
 
     /**
@@ -44,7 +44,7 @@ class JobController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return 'show';
     }
 
     /**
@@ -52,7 +52,7 @@ class JobController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return 'edit';
     }
 
     /**
@@ -60,7 +60,7 @@ class JobController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        return 'update';
     }
 
     /**
@@ -68,6 +68,6 @@ class JobController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        return 'destroy';
     }
 }
