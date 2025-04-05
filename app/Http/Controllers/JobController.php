@@ -30,5 +30,7 @@ class JobController extends Controller
     public function store(request $request){
         $title = $request->input('title');
         $description = $request->input('description');
+
+        return "Title: $title Description: $description";
     }
 }

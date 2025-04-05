@@ -12,6 +12,8 @@ Route::get('/jobs/create',[JobController::class, 'create']);
 
 Route::get('/jobs/{id}',[JobController::class, 'show']);
 
+Route::post('/jobs',[JobController::class, 'store']);
+
 /*Route::post('/submit', function () {
     return ('submitted');
 });
