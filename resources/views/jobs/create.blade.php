@@ -12,7 +12,7 @@
 <form action="/jobs" method="post">
     <input type="text" name="title" placeholder="title">
     <input type="text" name="description" placeholder="description">
-    <button type="submit"></button>
+    <button type="submit">Submit</button>
 </form>
 </body>
 </html>

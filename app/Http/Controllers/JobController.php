@@ -26,4 +26,9 @@ class JobController extends Controller
     {
        return "Showing job $id";
     }
+
+    public function store(request $request){
+        $title = $request->input('title');
+        $description = $request->input('description');
+    }
 }
