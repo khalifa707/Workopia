@@ -21,7 +21,7 @@
     <!-- Mobile Menu -->
     <div
         id="mobile-menu"
-        class="hidden md:hidden bg-blue-900 text-white mt-5 pb-4 space-y-2"
+        class=" md:hidden bg-blue-900 text-white mt-5 pb-4 space-y-2"
     >
         <x-nav-link url="/jobs" :active="request()->is('jobs')" :mobile="true">All Jobs</x-nav-link>
         <x-nav-link url="/jobs/saved" :active="request()->is('jobs/saved')" :mobile="true">Saved Jobs</x-nav-link>
@@ -31,6 +31,6 @@
         <x-nav-link url="/login" :active="request()->is('login')" :mobile="true">Login</x-nav-link>
         <x-nav-link url="/Register" :active="request()->is('Register')" :mobile="true">Register</x-nav-link>
 
-        <x-button-link url="/jobs/create" icon="edit" :block="true"> Create Job</x-button-link>
+        <x-button-link url="/jobs/create" icon="edit" :mobile="true" :block="true"> Create Job</x-button-link>
     </div>
 </header>
