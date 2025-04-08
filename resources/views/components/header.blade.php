@@ -31,11 +31,6 @@
         <x-nav-link url="/login" :active="request()->is('login')" :mobile="true">Login</x-nav-link>
         <x-nav-link url="/Register" :active="request()->is('Register')" :mobile="true">Register</x-nav-link>
 
-        <a
-            href="{{url('/jobs/create')}}"
-            class="block px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-black"
-        >
-            <i class="fa fa-edit"></i> Create Job
-        </a>
+        <x-button-link url="/jobs/create" icon="edit" :block="true"> Create Job</x-button-link>
     </div>
 </header>
