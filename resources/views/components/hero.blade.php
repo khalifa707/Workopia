@@ -1,4 +1,5 @@
-    <section
+@props(['title' => 'Find Your Dream Job'])
+<section
         class="hero relative bg-cover bg-center bg-no-repeat h-80 flex items-center"
     >
         <div class="overlay"></div>
@@ -26,4 +27,4 @@
                 </button>
             </form>
         </div>
-    </section>
+</section>
