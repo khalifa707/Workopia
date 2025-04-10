@@ -10,6 +10,6 @@
                 {{$subheading}}
             </p>
         </div>
-        <x-button-link url="/jobs/create" icon="edit"></x-button-link>
+        <x-button-link url="/jobs/create" icon="edit">Create a job</x-button-link>
     </div>
 </section>
